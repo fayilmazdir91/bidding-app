@@ -22,7 +22,7 @@ To run the application, navigate to the project directory and run the following 
 ```
 docker-compose up
 ```
-This will start the application as a one Container includes Spring Boot API, ReactJS Frontend, MySQL Database and Redis. Application will be accessible at http://localhost:3000
+This will start the application as separate containers consisting of a Spring Boot API, ReactJS Frontend, MySQL Database, and Redis. The application will be accessible at http://localhost:3000
 
 ## Swagger Integration
 http://localhost:9090/swagger-ui/index.html
