@@ -30,16 +30,34 @@ http://localhost:9090/swagger-ui/index.html
 ### Swagger Endpoints
 ![image](https://user-images.githubusercontent.com/57766894/229323873-9f3c1f6c-6a0d-4043-9863-ac6ce243a0c5.png)
 
+### Registration for case :
+```
+{
+    "type":"REGISTER",
+    "name":"Ahmet Fırat",
+    "surname":"Ayılmazdır",
+    "email":"fayilmazdir91@gmail.com",
+    "registrationKey":"40d4d426f0fbc90c1a57f22d62c06eec90d474b6e00e8eef841aaabf276e0d6b"
+}
+```
+
+## Pages:
+<hr/>
+
 ### Login Page: 
+
 ![image](https://user-images.githubusercontent.com/57766894/229325530-c1a9e4e4-3dc5-47a5-82e8-f45767a71a67.png)
 
 ### Register Page:
+
 ![image](https://user-images.githubusercontent.com/57766894/229325062-d3b003be-53e6-4bb0-9ddc-bca1984c0a06.png)
 
 ### Products Page:
+
 ![image](https://user-images.githubusercontent.com/57766894/229325297-ccefe6c0-a0cf-4151-8459-8e4ee47324a4.png)
 
 ### Product Page:
+
 ![image](https://user-images.githubusercontent.com/57766894/229325482-770349ad-84c8-4e29-88e3-03e6d6900079.png)
 
 
