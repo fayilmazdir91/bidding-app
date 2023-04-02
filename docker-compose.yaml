@@ -1,0 +1,49 @@
+version: '3.8'
+services:
+  bidding_app_api:
+    image: fayilmazdir91/bidding-app-api:latest
+    container_name: bidding-app-api
+    restart: always
+    ports:
+      - "9090:9090"
+    depends_on:
+      - mysqldb
+      - redis
+    networks:
+      - bidding_app_network
+  mysqldb:
+    image: mysql:5.7
+    container_name: mysqldb
+    restart: always
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: data
+      MYSQL_ROOT_USERNAME: root
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - bidding_app_network
+  redis:
+    image: redis:latest
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - bidding_app_network
+  bidding-app-frontend:
+    container_name: bidding-app-frontend
+    image: fayilmazdir91/bidding-app-frontend:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - bidding_app_network
+networks:
+  bidding_app_network:
+volumes:
+  mysql-data:
+  redis-data:
