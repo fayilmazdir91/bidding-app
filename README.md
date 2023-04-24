@@ -30,17 +30,6 @@ http://localhost:9090/swagger-ui/index.html
 ### Swagger Endpoints
 ![image](https://user-images.githubusercontent.com/57766894/229323873-9f3c1f6c-6a0d-4043-9863-ac6ce243a0c5.png)
 
-### Registration for case :
-```
-{
-    "type":"REGISTER",
-    "name":"Ahmet Fırat",
-    "surname":"Ayılmazdır",
-    "email":"fayilmazdir91@gmail.com",
-    "registrationKey":"40d4d426f0fbc90c1a57f22d62c06eec90d474b6e00e8eef841aaabf276e0d6b"
-}
-```
-
 ## Pages:
 <hr/>
 
